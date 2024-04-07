@@ -1,7 +1,8 @@
 {
+  "homepage": "https://frankoissa.github.io/PORTFOLIO",
   "name": "issa-portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
   "dependencies": {
     "@react-spring/core": "^9.7.2",
     "@react-spring/three": "^9.7.2",
@@ -29,6 +30,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -53,6 +56,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "css-loader": "^6.7.3",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.2.4",
     "tailwindcss": "^3.3.1"
