@@ -2,8 +2,7 @@ import React from "react";
 import Impressum from "./Impressum";
 
 const Contact = () => {
-
-  const blackStyl = "text-gray-900"
+  const blackStyl = "text-gray-900";
   return (
     <>
       <div

@@ -1,5 +1,4 @@
 import React from "react";
-import { HiArrowNarrowRight } from "react-icons/hi";
 import Foto from "../assets/MeinFotofürBewerbung (2).jpeg"
 const Home = () => {
   return (

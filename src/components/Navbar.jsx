@@ -48,11 +48,6 @@ const Navbar = () => {
         </li>
 
         <li className="border-b transition duration-400 ease-in-out hover:border-b-2 hover:border-black hover:shadow-sm mb-2">
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li className="border-b transition duration-400 ease-in-out hover:border-b-2 hover:border-black hover:shadow-sm mb-2">
           <Link to="projekt" smooth={true} duration={500}>
             Project
           </Link>
@@ -84,11 +79,13 @@ const Navbar = () => {
           </Link>
         </li>
 
+        {/** Add it later 
         <li className="py-6 text-4xl">
           <Link onClick={clickhandler} to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
+     */}
         <li className="py-6 text-4xl">
           <Link
             onClick={clickhandler}
