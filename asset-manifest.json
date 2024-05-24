@@ -1,24 +1,16 @@
 {
   "files": {
-    "main.css": "/PORTFOLIO/static/css/main.4eb24820.css",
-    "main.js": "/PORTFOLIO/static/js/main.bc2c4a65.js",
-    "static/media/java.png": "/PORTFOLIO/static/media/java.fdabd4e11f1235e4e8e0.png",
-    "static/media/WhatsApp Image 2023-05-08 at 12.36.45.jpeg": "/PORTFOLIO/static/media/WhatsApp Image 2023-05-08 at 12.36.45.0f088ccf14131b1bf0d1.jpeg",
+    "main.css": "/PORTFOLIO/static/css/main.71f98383.css",
+    "main.js": "/PORTFOLIO/static/js/main.312af92d.js",
+    "static/media/WhatsApp Image 2023-05-08 at 12.36.45.jpeg": "/PORTFOLIO/static/media/WhatsApp Image 2023-05-08 at 12.36.45.374fcf5a5f5ccf9d9581.jpeg",
     "static/media/MeinFotofürBewerbung (2).jpeg": "/PORTFOLIO/static/media/MeinFotofürBewerbung (2).68c351ff6ccde7d504ee.jpeg",
-    "static/media/WorkingOn.png": "/PORTFOLIO/static/media/WorkingOn.3cdab75c72659b6c5ae0.png",
-    "static/media/mysql.png": "/PORTFOLIO/static/media/mysql.8736217443c731e4a46e.png",
-    "static/media/Tailwind.png": "/PORTFOLIO/static/media/Tailwind.087f91401d142f1a4903.png",
-    "static/media/modeJS.png": "/PORTFOLIO/static/media/modeJS.bc4b43cd5f20ba305059.png",
     "static/media/logo2.mp4": "/PORTFOLIO/static/media/logo2.68fbb6c47fa6630d1297.mp4",
-    "static/media/html.png": "/PORTFOLIO/static/media/html.2ba4fabc69a89a8f71e6.png",
-    "static/media/css.png": "/PORTFOLIO/static/media/css.69a82c2d9e45c933a9cb.png",
-    "static/media/JavaScript.png": "/PORTFOLIO/static/media/JavaScript.266bd9fb2663dcc057b4.png",
     "index.html": "/PORTFOLIO/index.html",
-    "main.4eb24820.css.map": "/PORTFOLIO/static/css/main.4eb24820.css.map",
-    "main.bc2c4a65.js.map": "/PORTFOLIO/static/js/main.bc2c4a65.js.map"
+    "main.71f98383.css.map": "/PORTFOLIO/static/css/main.71f98383.css.map",
+    "main.312af92d.js.map": "/PORTFOLIO/static/js/main.312af92d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4eb24820.css",
-    "static/js/main.bc2c4a65.js"
+    "static/css/main.71f98383.css",
+    "static/js/main.312af92d.js"
   ]
 }
