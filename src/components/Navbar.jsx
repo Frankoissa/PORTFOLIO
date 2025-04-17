@@ -1,17 +1,14 @@
 import React, { Component, useState } from "react";
-import Logo from "../assets/logo2.mp4";
+import Logo from "../assets/logo2.gif";
 import {
   FaBars,
   FaTimes,
   FaGithub,
   FaLinkedin,
-  FaFacebook,
-  FaWhatsapp,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { Link } from "react-scroll";
-import axios from "axios";
-import { WiDayHail } from "react-icons/wi";
+
 //imports
 
 const Navbar = () => {
@@ -31,7 +28,7 @@ const Navbar = () => {
   return (
     <div className=" fixed w-full top-0 h-[80px] flex justify-between items-center px-4 bg-[#F1EFF1] text-black md:m-auto sm:mb-10">
       {/*Logo*/}
-      <video
+      <img
         title="Issa der Developer"
         src={Logo}
         style={{ width: "80px" }}
