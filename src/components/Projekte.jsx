@@ -1,5 +1,8 @@
 import { React, useRef } from "react";
-import firsWork from "../assets/Works/WhatsApp Image 2023-05-08 at 12.36.45.jpeg";
+import firsWork from "../assets/Works/DRRajab.jpeg";
+// Import the images for your new projects - update these paths to match your actual files
+import provetImage from "../assets/Works/Provet.png";
+import saludImage from "../assets/Works/salud.png"
 
 const Projekte = () => {
   return (
@@ -16,12 +19,54 @@ const Projekte = () => {
 
         <div
           name="projekt"
-          className="bg-[#F1EFF1] text-gray-900 w-full h-screen flex flex-row flex-wrap  sm:py-5 mt-10"
+          className="bg-[#F1EFF1] text-gray-900 w-full h-screen flex flex-row flex-wrap gap-6 sm:py-5 mt-10"
         >
-          <a href="https://praxis-rajab-bochum.de" target="_blank">
-            <img src={firsWork} alt="Not Available" width={450} height={450} />
-          </a>
-        
+          {/* First Project */}
+          <div className="project-card">
+            <a
+              href="https://praxis-rajab-bochum.de"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={firsWork}
+                alt="Praxis Rajab"
+                width={450}
+                height={450}
+                className="hover:scale-105 duration-500"
+              />
+            </a>
+          </div>
+
+          {/* Second Project - Provet */}
+          <div className="project-card">
+            <a
+              href="https://provet-tierarzt-notdienst.de/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={provetImage}
+                alt="Provet Tierarzt Notdienst"
+                width={450}
+                height={450}
+                className="hover:scale-105 duration-500"
+              />
+            </a>
+          </div>
+
+          {/* Third Project - Salud Blog */}
+          <div className="project-card">
+            <a href="http://saludblog.de/" target="_blank" rel="noreferrer">
+              <img
+                src={saludImage}
+                alt="Salud Blog"
+                width={450}
+                height={450}
+                className="hover:scale-105 duration-500"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
