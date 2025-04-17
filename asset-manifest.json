@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/PORTFOLIO/static/css/main.71f98383.css",
-    "main.js": "/PORTFOLIO/static/js/main.312af92d.js",
-    "static/media/WhatsApp Image 2023-05-08 at 12.36.45.jpeg": "/PORTFOLIO/static/media/WhatsApp Image 2023-05-08 at 12.36.45.374fcf5a5f5ccf9d9581.jpeg",
+    "main.css": "/PORTFOLIO/static/css/main.be27f8aa.css",
+    "main.js": "/PORTFOLIO/static/js/main.9c391196.js",
+    "static/media/Provet.png": "/PORTFOLIO/static/media/Provet.dbeb38185ed7e55ab68e.png",
+    "static/media/salud.png": "/PORTFOLIO/static/media/salud.8450d09a72d71c22ec8e.png",
+    "static/media/DRRajab.jpeg": "/PORTFOLIO/static/media/DRRajab.374fcf5a5f5ccf9d9581.jpeg",
     "static/media/MeinFotofürBewerbung (2).jpeg": "/PORTFOLIO/static/media/MeinFotofürBewerbung (2).68c351ff6ccde7d504ee.jpeg",
-    "static/media/logo2.mp4": "/PORTFOLIO/static/media/logo2.68fbb6c47fa6630d1297.mp4",
+    "static/media/logo2.gif": "/PORTFOLIO/static/media/logo2.fc9d3cd9ccf1a87195d1.gif",
     "index.html": "/PORTFOLIO/index.html",
-    "main.71f98383.css.map": "/PORTFOLIO/static/css/main.71f98383.css.map",
-    "main.312af92d.js.map": "/PORTFOLIO/static/js/main.312af92d.js.map"
+    "main.be27f8aa.css.map": "/PORTFOLIO/static/css/main.be27f8aa.css.map",
+    "main.9c391196.js.map": "/PORTFOLIO/static/js/main.9c391196.js.map"
   },
   "entrypoints": [
-    "static/css/main.71f98383.css",
-    "static/js/main.312af92d.js"
+    "static/css/main.be27f8aa.css",
+    "static/js/main.9c391196.js"
   ]
 }
