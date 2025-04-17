@@ -38,7 +38,7 @@ const projectsData = [
 
 const Projekte = () => {
   return (
-    <div className="w-full min-h-screen bg-[#F1EFF1] py-16">
+    <div name="projekt" className="w-full min-h-screen bg-[#F1EFF1] py-16">
       {/* Main container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col w-full">
         {/* Heading */}
