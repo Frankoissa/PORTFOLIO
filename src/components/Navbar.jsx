@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" fixed w-full top-0 h-[80px] flex justify-between items-center px-4 bg-[#F1EFF1] text-black md:m-auto sm:mb-10">
+    <div className=" fixed w-full top-0 h-[80px] flex justify-between items-center px-4 bg-[#F1EFF1] text-black md:m-auto sm:mb-10  z-50">
       {/*Logo*/}
       <img
         title="Issa der Developer"
