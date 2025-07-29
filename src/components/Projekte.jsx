@@ -3,71 +3,60 @@ import ProjectCard from "./ProjectCard";
 import firsWork from "../assets/Works/DRRajab.jpeg";
 import provetImage from "../assets/Works/Provet.png";
 import saludImage from "../assets/Works/salud.png";
+import mkmultibauImage from "../assets/Works/MK Multibau.png";
 
-// Project data array
 const projectsData = [
   {
     id: 1,
     image: firsWork,
-    title: "Praxis Dr. Rajab",
-    description:
-      "A modern website for a medical practice in Bochum, featuring appointment booking and service information.",
+    title: "Dr. Rajab Medical Practice",
+    description: "Modern medical practice website with appointment booking and service information.",
     link: "https://praxis-rajab-bochum.de",
-    technologies: ["React", "Tailwind CSS", "JavaScript"],
-    isFeatured: true,
+    technologies: ["React", "Tailwind", "JavaScript"],
   },
   {
     id: 2,
     image: provetImage,
-    title: "Provet Tierarzt Notdienst",
-    description:
-      "Emergency veterinary service platform connecting pet owners with available veterinarians.",
+    title: "Provet Emergency Veterinary",
+    description: "Emergency veterinary platform connecting pet owners with available veterinarians.",
     link: "https://provet-tierarzt-notdienst.de/",
-    technologies: ["Next.js", "Tailwind CSS", "Node.js"],
+    technologies: ["Next.js", "Tailwind", "Node.js"],
   },
   {
     id: 3,
     image: saludImage,
     title: "Salud Blog",
-    description:
-      "Health and wellness blog providing valuable information about nutrition, fitness, and wellbeing.",
+    description: "Health and wellness blog with nutrition, fitness, and wellbeing content.",
     link: "http://saludblog.de/",
     technologies: ["Next.js", "CSS", "JavaScript"],
+  },
+  {
+    id: 4,
+    image: mkmultibauImage,
+    title: "MK Multibau",
+    description: "Construction company website showcasing services and project references.",
+    link: "https://mk-multibau.de/",
+    technologies: ["React", "Tailwind", "JavaScript"],
   },
 ];
 
 const Projekte = () => {
   return (
-    <div name="projekt" className="w-full min-h-screen bg-[#F1EFF1] py-16">
-      {/* Main container */}
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col w-full">
-        {/* Heading */}
-        <div className="mb-12">
-          <p className="px-4 text-4xl font-bold inline border-b-4 border-black">
-            My Projects
-          </p>
-          <p className="py-4 px-4 text-2xl text-gray-600">
-            Recent work I've completed:
-          </p>
+    <section className="py-24 bg-[#F1EFF1]">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="mb-16 text-center">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-3 tracking-tight">Meine Projekte</h2>
+          
+          <p className="text-lg text-gray-600">Eine Auswahl meiner letzten Arbeiten und Referenzen.</p>
         </div>
 
-        {/* Projects grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {projectsData.map((project) => (
-            <ProjectCard
-              key={project.id}
-              image={project.image}
-              title={project.title}
-              description={project.description}
-              link={project.link}
-              githubLink={project.githubLink}
-              technologies={project.technologies}
-              isFeatured={project.isFeatured}
-            />
+            <ProjectCard key={project.id} {...project} />
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
