@@ -1,78 +1,57 @@
-import React from "react";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import React from 'react';
 
-const ProjectCard = ({
-  image,
-  title,
-  description,
-  link,
-  githubLink,
-  technologies,
-  isFeatured = false,
-}) => {
+const ProjectCard = ({ image, title, description, link, technologies = [] }) => {
   return (
-    <div
-      className={`project-card flex flex-col bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl ${
-        isFeatured ? "lg:col-span-2" : ""
-      }`}
-    >
-      <div className="relative overflow-hidden group">
-        <a
-          href={link}
-          target="_blank"
-          rel="noreferrer"
-          aria-label={`Visit ${title} website`}
-        >
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-            <span className="text-white font-medium px-4 py-2 rounded-md">
-              View Project
-            </span>
-          </div>
-        </a>
+    <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1">
+      {/* Image */}
+      <div className="overflow-hidden">
+        <img 
+          src={image} 
+          alt={title}
+          className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-700"
+        />
       </div>
 
-      <div className="project-info p-6 flex-grow">
-        <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
-        <p className="text-gray-600 mb-4">{description}</p>
+      {/* Content */}
+      <div className="p-6 space-y-4">
+        <h3 className="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+          {title}
+        </h3>
+        
+        <p className="text-gray-600 leading-relaxed text-sm">
+          {description}
+        </p>
 
-        <div className="tech-stack flex flex-wrap gap-2 mb-4">
-          {technologies?.map((tech, index) => (
-            <span
-              key={index}
-              className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
+        {/* Technologies */}
+        {technologies.length > 0 && (
+          <div className="flex flex-wrap gap-2">
+            {technologies.map((tech, index) => (
+              <span 
+                key={index}
+                className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full font-medium"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        )}
 
-        <div className="flex space-x-3 mt-auto">
-          {githubLink && (
+        {/* Link */}
+        {link && (
+          <div className="pt-2">
             <a
-              href={githubLink}
+              href={link}
               target="_blank"
-              rel="noreferrer"
-              aria-label="View source code on GitHub"
-              className="p-2 text-gray-600 hover:text-gray-900 transition-colors"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors duration-200"
             >
-              <FaGithub size={20} />
+              View Project 
+              <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
             </a>
-          )}
-          <a
-            href={link}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`Visit ${title} website`}
-            className="p-2 text-gray-600 hover:text-gray-900 transition-colors"
-          >
-            <FaExternalLinkAlt size={18} />
-          </a>
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );
